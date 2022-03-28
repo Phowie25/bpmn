@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.13.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.BusinessObject">
+            <fields>
+                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Ciudades">
+            <fields>
+                <field type="STRING" length="255" name="nombreCiudad" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Colores">
+            <fields>
+                <field type="STRING" length="255" name="nombreColor" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Facturas">
+            <fields>
+                <field type="LOCALDATE" length="255" name="fecha" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="totalFactura" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Publicacion" fetchType="LAZY" name="publicaciones" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Marca">
+            <fields>
+                <field type="STRING" length="255" name="nombreMarca" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Planes">
+            <fields>
+                <field type="STRING" length="255" name="nombrePlan" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="activo" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="valorPlan" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="diasPublicacion" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Publicacion">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.company.model.TipoVehiculo" fetchType="LAZY" name="tipodevehiculo" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Marca" fetchType="LAZY" name="marca" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="ano" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="placa" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Ciudades" fetchType="LAZY" name="ciudadVenta" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="kms" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="precio" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="color" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="usuario" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Planes" fetchType="LAZY" name="plan" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="aprobada" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="pagada" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.TipoVehiculo">
+            <fields>
+                <field type="STRING" length="255" name="nombreTipo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.TiposUsuarios">
+            <fields>
+                <field type="STRING" length="255" name="nombreTipoUsuario" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="credito" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="diasCredito" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Usuarios">
+            <fields>
+                <field type="STRING" length="255" name="nombreUsuario" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="identificacion" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.TiposUsuarios" fetchType="LAZY" name="tipoUsuario" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
