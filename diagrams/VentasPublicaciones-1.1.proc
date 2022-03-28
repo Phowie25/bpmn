@@ -58,7 +58,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_VKmtYK39Eeyg0f85j09evA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_VKmtYq39Eeyg0f85j09evA" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:CallActivity" xmi:id="_yms20K4wEeyg0f85j09evA" name="Sincronizar y publicar" outgoing="_1oE9IK4wEeyg0f85j09evA" incoming="_1DBIQK4wEeyg0f85j09evA">
+        <elements xmi:type="process:CallActivity" xmi:id="_yms20K4wEeyg0f85j09evA" name="Sincronizar y publicar_1" outgoing="_1oE9IK4wEeyg0f85j09evA" incoming="_1DBIQK4wEeyg0f85j09evA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_yms20a4wEeyg0f85j09evA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_yms20q4wEeyg0f85j09evA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_yms2064wEeyg0f85j09evA" name="" content="" returnTypeFixed="true"/>
@@ -74,7 +74,7 @@
           </inputMappings>
           <inputMappings xmi:type="process:InputMapping" xmi:id="_yms23K4wEeyg0f85j09evA" subprocessTarget="usuarios_persistenceId">
             <processSource xmi:type="expression:Expression" xmi:id="_yms23a4wEeyg0f85j09evA" name="usuarios_persistenceId()" content="usuarios.persistenceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_yms23q4wEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuario"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_yms23q4wEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuarios"/>
             </processSource>
           </inputMappings>
           <inputMappings xmi:type="process:InputMapping" xmi:id="_yms2364wEeyg0f85j09evA" subprocessTarget="tipoUsuario_persistenceId">
@@ -82,7 +82,7 @@
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_yms24a4wEeyg0f85j09evA" name="tipoUsuario" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.TiposUsuarios"/>
             </processSource>
           </inputMappings>
-          <calledActivityName xmi:type="expression:Expression" xmi:id="_yms24q4wEeyg0f85j09evA" name="Subproceso_extraido1" content="Subproceso_extraido1"/>
+          <calledActivityName xmi:type="expression:Expression" xmi:id="_yms24q4wEeyg0f85j09evA" name="Sincronizar y Publicar" content="Sincronizar y Publicar"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_yms2464wEeyg0f85j09evA" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
@@ -147,7 +147,7 @@
           <contract xmi:type="process:Contract" xmi:id="_xfjlaK4sEeyg0f85j09evA"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_xfjla64sEeyg0f85j09evA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:CallActivity" xmi:id="_7jyjEK4vEeyg0f85j09evA" name="Sincronizar y publicar" outgoing="_996cIK4vEeyg0f85j09evA" incoming="_9hpW4K4vEeyg0f85j09evA">
+        <elements xmi:type="process:CallActivity" xmi:id="_7jyjEK4vEeyg0f85j09evA" name="Sincronizar y publicar_2" outgoing="_996cIK4vEeyg0f85j09evA" incoming="_9hpW4K4vEeyg0f85j09evA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_7jyjEa4vEeyg0f85j09evA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_7jyjEq4vEeyg0f85j09evA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_7jyjE64vEeyg0f85j09evA" name="" content="" returnTypeFixed="true"/>
@@ -163,7 +163,7 @@
           </inputMappings>
           <inputMappings xmi:type="process:InputMapping" xmi:id="_7jyjHK4vEeyg0f85j09evA" subprocessTarget="usuarios_persistenceId">
             <processSource xmi:type="expression:Expression" xmi:id="_7jyjHa4vEeyg0f85j09evA" name="usuarios_persistenceId()" content="usuarios.persistenceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_7jyjHq4vEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuario"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_7jyjHq4vEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuarios"/>
             </processSource>
           </inputMappings>
           <inputMappings xmi:type="process:InputMapping" xmi:id="_7jyjH64vEeyg0f85j09evA" subprocessTarget="tipoUsuario_persistenceId">
@@ -207,7 +207,7 @@
           </inputMappings>
           <inputMappings xmi:type="process:InputMapping" xmi:id="_2XbLia3lEeyg0f85j09evA" subprocessTarget="usuarios_persistenceId">
             <processSource xmi:type="expression:Expression" xmi:id="_2XbykK3lEeyg0f85j09evA" name="usuarios_persistenceId()" content="usuarios.persistenceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_2Xbyka3lEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuario"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_2Xbyka3lEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuarios"/>
             </processSource>
           </inputMappings>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_2XGbYK3lEeyg0f85j09evA" name="Cobranza" content="Cobranza" returnTypeFixed="true"/>
@@ -262,7 +262,7 @@
       <data xmi:type="process:BusinessObjectData" xmi:id="_4v238K3kEeyg0f85j09evA" name="publicaciones" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Publicacion">
         <defaultValue xmi:type="expression:Expression" xmi:id="_4v238a3kEeyg0f85j09evA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_Jhcl0K3lEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuario">
+      <data xmi:type="process:BusinessObjectData" xmi:id="_Jhcl0K3lEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuarios">
         <defaultValue xmi:type="expression:Expression" xmi:id="_Jhcl0a3lEeyg0f85j09evA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_ZqcD0K3_Eeyg0f85j09evA" name="tipoUsuario" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.TiposUsuarios">
@@ -451,14 +451,8 @@
           </referencedElements>
         </defaultValue>
       </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_2XbLhK3lEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuario">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_2XbLha3lEeyg0f85j09evA" name="Usuario.findByPersistenceId" content="SELECT u&#xA;FROM Usuario u&#xA;WHERE u.persistenceId= :persistenceId&#xA;" type="TYPE_QUERY_BUSINESS_DATA" returnType="com.company.model.Usuario">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_2XbLhq3lEeyg0f85j09evA" name="persistenceId" content="persistenceId" type="QUERY_PARAM_TYPE" returnType="java.lang.Long" returnTypeFixed="true">
-            <referencedElements xmi:type="expression:Expression" xmi:id="_2XbLh63lEeyg0f85j09evA" name="usuarios_persistenceId" content="usuarios_persistenceId" type="TYPE_CONTRACT_INPUT" returnType="java.lang.Long">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_2XbLiK3lEeyg0f85j09evA" name="usuarios_persistenceId" type="LONG"/>
-            </referencedElements>
-          </referencedElements>
-        </defaultValue>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_2XbLhK3lEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuarios">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_2XbLha3lEeyg0f85j09evA" name="" content="" interpreter="GROOVY"/>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_lQQs4K3-Eeyg0f85j09evA" name="tipoUsuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.TiposUsuarios">
         <defaultValue xmi:type="expression:Expression" xmi:id="_lQQs4a3-Eeyg0f85j09evA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
@@ -565,7 +559,9 @@
           </referencedElements>
         </defaultValue>
       </data>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_ugIfgK4vEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuario"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_ugIfgK4vEeyg0f85j09evA" name="usuarios" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Usuarios">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_Ueq9MK45Eeyg0f85j09evA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_ugIfha4vEeyg0f85j09evA" name="tipoUsuario" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.TiposUsuarios">
         <defaultValue xmi:type="expression:Expression" xmi:id="_ugIfhq4vEeyg0f85j09evA" name="TiposUsuarios.findByPersistenceId" content="SELECT t&#xA;FROM TiposUsuarios t&#xA;WHERE t.persistenceId= :persistenceId&#xA;" type="TYPE_QUERY_BUSINESS_DATA" returnType="com.company.model.TiposUsuarios">
           <referencedElements xmi:type="expression:Expression" xmi:id="_ugIfh64vEeyg0f85j09evA" name="persistenceId" content="persistenceId" type="QUERY_PARAM_TYPE" returnType="java.lang.Long" returnTypeFixed="true">
