@@ -1,6 +1,6 @@
 #FileLock
-#Sun Mar 27 10:25:52 COT 2022
-server=192.168.5.109\:61963
-hostName=LAPTOP-9VHIR7NN
+#Sun Mar 27 20:44:41 COT 2022
+server=192.168.1.1\:51465
+hostName=host.docker.internal
 method=file
-id=17fcbfbd1dc4ba13ce9f39069425abb54dac0c6e194
+id=17fce325cefc93d61cd5f388550a261d8f7ddb08271
