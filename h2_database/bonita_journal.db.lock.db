@@ -1,6 +1,6 @@
 #FileLock
-#Wed Mar 30 16:14:46 COT 2022
-server=192.168.5.109\:60884
-hostName=LAPTOP-9VHIR7NN
+#Wed Mar 30 20:35:05 COT 2022
+server=127.0.1.1\:34005
+hostName=yilmar-pc
 method=file
-id=17fdcae5515898ac40c17764bd15a9e02d99ec5afb5
+id=17fdd9ca7763699f394aef31dc223d2282f590b1982
