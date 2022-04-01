@@ -73,6 +73,21 @@
                 <field type="INTEGER" length="255" name="tipoplan" nullable="true" collection="false"/>
                 <field type="INTEGER" length="255" name="calificacion" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.company.model.Asesores" fetchType="LAZY" name="asesor" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="duenoUnico" nullable="true" collection="false"/>
+                <field type="LONG" length="512" name="precioVehiculo" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Seguridad">
+            <fields>
+                <field type="BOOLEAN" length="255" name="tieneAirbags" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="tieneCinturones" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="tieneTecnomecanica" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="veredicto" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="visibilidadPublicacion" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="asesorPersonalizado" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
