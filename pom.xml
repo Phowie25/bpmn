@@ -5,7 +5,7 @@
   <groupId>com.company</groupId>
   <artifactId>proyecto</artifactId>
   <version>0.0.1</version>
-  <name>bpmn</name>
+  <name>bpmn2</name>
   <properties>
     <bonita.runtime.version>7.13.0</bonita.runtime.version>
     <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
@@ -123,6 +123,11 @@
       <groupId>org.bonitasoft.connectors</groupId>
       <artifactId>bonita-connector-email</artifactId>
       <version>1.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.connectors</groupId>
+      <artifactId>bonita-connector-salesforce</artifactId>
+      <version>1.1.3</version>
     </dependency>
   </dependencies>
   <build>
