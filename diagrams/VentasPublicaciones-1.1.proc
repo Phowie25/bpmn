@@ -1901,7 +1901,9 @@
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_WwXxUK39Eeyg0f85j09evA" target="_xfi-UK4sEeyg0f85j09evA" source="_K-CsgLPAEeyWHJGuSbwjJw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_WwXxUa39Eeyg0f85j09evA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_WwXxUq39Eeyg0f85j09evA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_WwXxUq39Eeyg0f85j09evA" name="newScript()" content="publicaciones.tipoplan  != &quot;BASICO&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_O4NxILPCEey0nf7Di6j_RQ" name="publicaciones" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Publicacion"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_3MfWMK4wEeyg0f85j09evA" target="_YYKOgK39Eeyg0f85j09evA" source="_xfi-UK4sEeyg0f85j09evA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_3Mf9QK4wEeyg0f85j09evA"/>
@@ -1923,9 +1925,9 @@
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_sPPiYK_ZEeyV9uVsH7xRtg" name="publicaciones" dataType="_5np4RK3jEeyg0f85j09evA" className="com.company.model.Publicacion"/>
         </condition>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_NTplMK_fEeyCLrojw1-lzQ" target="_RmtV0K_fEeyCLrojw1-lzQ" source="_K-CsgLPAEeyWHJGuSbwjJw">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_NTplMK_fEeyCLrojw1-lzQ" target="_RmtV0K_fEeyCLrojw1-lzQ" source="_K-CsgLPAEeyWHJGuSbwjJw" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_NTplMa_fEeyCLrojw1-lzQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_NTplMq_fEeyCLrojw1-lzQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_NTplMq_fEeyCLrojw1-lzQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_REL3kK_fEeyCLrojw1-lzQ" target="_aNh0sK39Eeyg0f85j09evA" source="_RmtV0K_fEeyCLrojw1-lzQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_REL3ka_fEeyCLrojw1-lzQ"/>
